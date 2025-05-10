@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #2575fc;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero a:hover {
+  background-color: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* Scroll Arrow */
+.scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.scroll-arrow a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.scroll-arrow a:hover {
+  color: #ccc;
+}
+
+/* Section Layout */
+.section {
+  padding: 80px 20px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Experience & Skills Lists */
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.section li {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.section li:hover {
+  transform: translateY(-5px);
+}
+
+.section li h3 {
+  color: #2575fc;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/* Skills Progress Bars */
+.skill-bar {
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background-color: #2575fc;
+  width: 0;
+  transition: width 0.6s ease-in-out;
+}
+
+/* Navigation (optional, if you want to add later) */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  font-size: 1.1rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #aaaaff;
+}
+
+/* You can adjust the logo size or alignment here if needed */
+.experience-logo {
+  width: 40px; /* Adjust size based on preference */
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px; /* Optional: Add rounded corners to the logo */
+}
+
+/* Layout for the list items */
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Adjust space between logo and text */
+}
+
+.experience-item span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
