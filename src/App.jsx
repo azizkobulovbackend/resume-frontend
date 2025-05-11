@@ -12,7 +12,6 @@ const App = () => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="logo">Aziz</div>
           <ul className="nav-list">
             <li><Link to="hero" smooth={true} duration={500}>Home</Link></li>
             <li><Link to="about" smooth={true} duration={500}>About</Link></li>
